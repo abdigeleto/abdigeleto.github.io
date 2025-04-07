@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CMS-FZC | Request a Quote</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+</head>
+<body class="main-layout">
+    <header>
+        <div class="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                            <div class="center-desk">
+ 	  			<div class="logo">
+                	           <a href="index.html"><img src="images/logo.png" alt="CMS Logo"/></a>
+             		         <span class="logo-text">Construction Material Suppliers</span>
+             	              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <nav class="navigation navbar navbar-expand-md navbar-dark">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarsExample04">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="products.html">Our Products</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                                    <li class="nav-item d_none"><a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                                    <li class="d_none get_btn"><a href="products.html">Get a Quote</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="request-quote">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="selected-image" class="text-center">
+                        <img src="" alt="Selected Equipment" class="img-fluid" style="max-height: 400px;">
+                        <h3 id="selected-model" style="margin-top: 20px; color: #13110e;"></h3>
+                    </div>
+                    <div id="quote-form" class="titlepage text-center">
+                        <h2>Get a Quote</h2>
+                        <p>Please provide your email to receive a quote and more information about this machine.</p>
+                        <form id="quote-request-form" class="main_form">
+                            <div class="row">
+                                <div class="col-md-6 mx-auto">
+                                    <input class="contactus" placeholder="Your Email" type="email" name="Email" required>
+                                    <textarea class="contactus1" placeholder="Message (Optional)" name="Message"></textarea>
+                                    <button class="send_btn" type="submit">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="thank-you" class="titlepage text-center" style="display: none;">
+                        <h2>Thank You!</h2>
+                        <p>We’ve received your request. Our team will reach out to you soon with a quote and more details.</p>
+                        <a href="index.html" class="read_more">Back to Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="contact">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="titlepage">
+                            <h2>Contact Us</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <form id="request" class="main_form">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <input class="contactus" placeholder="Full Name" type="text" name="Full Name">
+                                </div>
+                                <div class="col-md-3">
+                                    <input class="contactus" placeholder="Email" type="text" name="Email">
+                                </div>
+                                <div class="col-md-3">
+                                    <input class="contactus" placeholder="Phone Number" type="text" name="Phone Number">
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                                    <ul class="social_icon">
+                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-8">
+                                    <textarea class="contactus1" placeholder="Message" type="text" name="Message">Message</textarea>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                                    <button class="send_btn">Send</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-3 border_right">
+                        <ul class="location_icon">
+                            <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a>SAIF Office R6-13/A, SAIFZONE, Sharjah - UAE</li>
+                            <li><a href="https://wa.me/971553795022"><i class="fa fa-comment" aria-hidden="true"></i> +971553795022</a></li>
+                            <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a><a href="mailto:info@cmsfzc.com">info@cmsfzc.com</a></li>
+</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 border_right">
+                        <h3>Company</h3>
+                        <ul class="link">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <form class="bottom_form">
+                            <h3>Subscribe</h3>
+                            <input class="enter" placeholder="Enter your email" type="text" name="Enter your email">
+                            <button class="sub_btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p><a href="index.html">CMS-FZC</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Get the image and model from URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const img = urlParams.get('img');
+            const model = urlParams.get('model');
+            if (img) {
+                $('#selected-image img').attr('src', 'images/' + img);
+            }
+            if (model) {
+                $('#selected-model').text(decodeURIComponent(model));
+            }
+
+            // Handle form submission
+            $('#quote-request-form').submit(function(e) {
+                e.preventDefault();
+                $('#quote-form').hide();
+                $('#thank-you').show();
+            });
+        });
+    </script>
+</body>
+</html>

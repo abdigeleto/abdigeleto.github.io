@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <title>CMS-FZC | Our Products</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   </head>
+   <body class="main-layout products_page">
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div>
+      <header>
+         <div class="header">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo">
+                              <a href="index.html"><img src="images/logo.png" alt="CMS Logo"/></a>
+                              <span class="logo-text">Construction Material Suppliers</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                     <nav class="navigation navbar navbar-expand-md navbar-dark">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                           <ul class="navbar-nav mr-auto">
+                              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                              <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                              <li class="nav-item active"><a class="nav-link" href="Our Products.html">Our Products</a></li>
+                              <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                              <li class="nav-item d_none"><a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                              <li class="d_none get_btn"><a href="products.html">Get a Quote</a></li>
+                           </ul>
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <div class="product">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Our Products</h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid">
+            <div class="row">
+               <!-- Sidebar toggle button for mobile -->
+               <div class="col-12 d-md-none">
+                  <button id="sidebar-toggler" class="sidebar-toggler" type="button" data-toggle="collapse" data-target="#sidebarCollapse" aria-controls="sidebarCollapse" aria-expanded="false" aria-label="Toggle sidebar">
+                     <span class="sidebar-toggler-icon"></span>
+                  </button>
+               </div>
+               <!-- Sidebar -->
+               <div class="col-md-3 sidebar collapse d-md-block" id="sidebarCollapse">
+                  <div class="group">
+                     <h3>CNHTC</h3>
+                     <ul class="subgroups">
+                        <li><a href="#" data-group="howo" data-subgroup="dump-trucks" class="active">Dump Trucks</a></li>
+                        <li><a href="#" data-group="howo" data-subgroup="tractor-trucks">Tractor Trucks</a></li>
+                        <li><a href="#" data-group="howo" data-subgroup="cargo-trucks">Cargo Trucks</a></li>
+                        <li><a href="#" data-group="howo" data-subgroup="cement-mixer-trucks">Cement Mixer Trucks</a></li>
+                     </ul>
+                  </div>
+                  <div class="group">
+                     <h3>CATERPILLAR</h3>
+                     <ul class="subgroups">
+                        <li><a href="#" data-group="caterpillar" data-subgroup="excavator">Excavators</a></li>
+                        <li><a href="#" data-group="caterpillar" data-subgroup="loader">Backhoe Loaders</a></li>
+                        <li><a href="#" data-group="caterpillar" data-subgroup="dozer">Dozers</a></li>
+                        <li><a href="#" data-group="caterpillar" data-subgroup="wheel-loader">Wheel Loaders</a></li>
+                        <li><a href="#" data-group="caterpillar" data-subgroup="truck-loader">Truck Loaders</a></li>
+                     </ul>
+                  </div>
+                  <div class="group">
+                     <h3>XCMG</h3>
+                     <ul class="subgroups">
+                        <li><a href="#" data-group="xugong" data-subgroup="bulldozer">Bulldozers</a></li>
+                        <li><a href="#" data-group="xugong" data-subgroup="road-roller">Road Rollers</a></li>
+                        <li><a href="#" data-group="xugong" data-subgroup="grader-machine">Grader Machines</a></li>
+                        <li><a href="#" data-group="xugong" data-subgroup="truck-lifting-machines">Crane (Truck Lifting Machines)</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <!-- Product content -->
+               <div class="col-md-9 col-12 content">
+                  <div id="model-display" class="row">
+                     <!-- Dynamically populated by JavaScript -->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer id="contact">
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-4">
+                     <div class="titlepage">
+                        <h2>Contact Us</h2>
+                     </div>
+                  </div>
+                  <div class="col-md-12">
+                     <form id="request" class="main_form">
+                        <div class="row">
+                           <div class="col-md-3"><input class="contactus" placeholder="Full Name" type="text" name="Full Name"></div>
+                           <div class="col-md-3"><input class="contactus" placeholder="Email" type="text" name="Email"></div>
+                           <div class="col-md-3"><input class="contactus" placeholder="Phone Number" type="text" name="Phone Number"></div>
+                           <div class="col-md-3">
+                              <ul class="social_icon">
+                                 <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                 <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                 <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                                 <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                              </ul>
+                           </div>
+                           <div class="col-md-8"><textarea class="contactus1" placeholder="Message" name="Message">Message</textarea></div>
+                           <div class="col-md-4"><button class="send_btn">Send</button></div>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="col-md-3 border_right">
+                     <ul class="location_icon">
+                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a>SAIF Office R6-13/A, SAIFZONE, Sharjah - UAE</li>
+                        <li><a href="https://wa.me/971553795022"><i class="fa fa-comment" aria-hidden="true"></i> +971553795022</a></li>
+                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a><a href="/cdn-cgi/l/email-protection#bed7d0d8d1feddd3cdd8c4dd90ddd1d3"><span class="__cf_email__" data-cfemail="b29b9c949db2919f81948891dc919d9f">info@cmsfzc</span></a></li>
+                     </ul>
+                  </div>
+                  <div class="col-md-3 border_right">
+                     <h3>Menus</h3>
+                     <ul class="link">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-md-3">
+                     <form class="bottom_form">
+                        <h3>Newsletter</h3>
+                        <input class="enter" placeholder="Enter your email" type="text" name="Enter your email">
+                        <button class="sub_btn">subscribe</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p><a href="index.html">CMS-FZC</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script>
+         $(document).ready(function() {
+            const models = {
+               howo: {
+                  "dump-trucks": [
+                     { img: "images/howo-dump-truck-1.jpg", caption: "HOWO 371 - Dump Truck" },
+                     { img: "images/howo-dump-truck-2.jpg", caption: "HOWO 336 - Dump Truck" },
+                     { img: "images/howo-dump-truck-3.jpg", caption: "HOWO 375 - Dump Truck" },
+                     { img: "images/howo-dump-truck-4.jpg", caption: "HOWO 380 - Dump Truck" },
+                     { img: "images/howo-dump-truck-5.jpg", caption: "HOWO 400 - Dump Truck" },
+                     { img: "images/howo-dump-truck-6.jpg", caption: "HOWO 420 - Dump Truck" },
+                     { img: "images/howo-dump-truck-7.jpg", caption: "HOWO 430 - Dump Truck" },
+                     { img: "images/howo-dump-truck-8.jpg", caption: "HOWO 440 - Dump Truck" },
+                     { img: "images/howo-dump-truck-9.jpg", caption: "HOWO 450 - Dump Truck" },
+                     { img: "images/howo-dump-truck-10.jpg", caption: "HOWO 460 - Dump Truck" },
+                     { img: "images/howo-dump-truck-11.jpg", caption: "HOWO 470 - Dump Truck" },
+                     { img: "images/howo-dump-truck-12.jpg", caption: "HOWO 480 - Dump Truck" }
+                  ],
+                  "tractor-trucks": [
+                     { img: "images/howo-tractor-1.jpg", caption: "HOWO A7 - Tractor Truck" },
+                     { img: "images/howo-tractor-2.jpg", caption: "HOWO T7H - Tractor Truck" },
+                     { img: "images/howo-tractor-3.jpg", caption: "HOWO 375 - Tractor Truck" },
+                     { img: "images/howo-tractor-4.jpg", caption: "HOWO 420 - Tractor Truck" },
+                     { img: "images/howo-tractor-5.jpg", caption: "HOWO 440 - Tractor Truck" },
+                     { img: "images/howo-tractor-6.jpg", caption: "HOWO 460 - Tractor Truck" },
+                     { img: "images/howo-tractor-7.jpg", caption: "HOWO 480 - Tractor Truck" },
+                     { img: "images/howo-tractor-8.jpg", caption: "HOWO 500 - Tractor Truck" },
+                     { img: "images/howo-tractor-9.jpg", caption: "HOWO 520 - Tractor Truck" },
+                     { img: "images/howo-tractor-10.jpg", caption: "HOWO 540 - Tractor Truck" },
+                     { img: "images/howo-tractor-11.jpg", caption: "HOWO 560 - Tractor Truck" },
+                     { img: "images/howo-tractor-12.jpg", caption: "HOWO 580 - Tractor Truck" }
+                  ],
+                  "cargo-trucks": [
+                     { img: "images/howo-cargo-1.jpg", caption: "HOWO T5G - Cargo Truck" },
+                     { img: "images/howo-cargo-2.jpg", caption: "HOWO 336 - Cargo Truck" },
+                     { img: "images/howo-cargo-3.jpg", caption: "HOWO 375 - Cargo Truck" },
+                     { img: "images/howo-cargo-4.jpg", caption: "HOWO 400 - Cargo Truck" },
+                     { img: "images/howo-cargo-5.jpg", caption: "HOWO 420 - Cargo Truck" },
+                     { img: "images/howo-cargo-6.jpg", caption: "HOWO 440 - Cargo Truck" },
+                     { img: "images/howo-cargo-7.jpg", caption: "HOWO 460 - Cargo Truck" },
+                     { img: "images/howo-cargo-8.jpg", caption: "HOWO 480 - Cargo Truck" },
+                     { img: "images/howo-cargo-9.jpg", caption: "HOWO 500 - Cargo Truck" },
+                     { img: "images/howo-cargo-10.jpg", caption: "HOWO 520 - Cargo Truck" },
+                     { img: "images/howo-cargo-11.jpg", caption: "HOWO 540 - Cargo Truck" },
+                     { img: "images/howo-cargo-12.jpg", caption: "HOWO 560 - Cargo Truck" }
+                  ],
+                  "cement-mixer-trucks": [
+                     { img: "images/howo-mixer-1.jpg", caption: "HOWO Mixer 6x4 - Cement Mixer Truck" },
+                     { img: "images/howo-mixer-2.jpg", caption: "HOWO Mixer 8x4 - Cement Mixer Truck" },
+                     { img: "images/howo-mixer-3.jpg", caption: "HOWO Mixer 10m³ - Cement Mixer Truck" },
+                     { img: "images/howo-mixer-4.jpg", caption: "HOWO Mixer 12m³ - Cement Mixer Truck" },
+                     { img: "images/howo-mixer-5.jpg", caption: "HOWO Mixer 14m³ - Cement Mixer Truck" },
+                     { img: "images/howo-mixer-6.jpg", caption: "HOWO Mixer 16m³ - Cement Mixer Truck" },
+                     { img: "images/howo-mixer-7.jpg", caption: "HOWO Mixer 18m³ - Cement Mixer Truck" },
+                     { img: "images/howo-mixer-8.jpg", caption: "HOWO Mixer 20m³ - Cement Mixer Truck" },
+                     { img: "images/howo-mixer-9.jpg", caption: "HOWO Mixer 22m³ - Cement Mixer Truck" },
+                     { img: "images/howo-mixer-10.jpg", caption: "HOWO Mixer 24m³ - Cement Mixer Truck" },
+                     { img: "images/howo-mixer-11.jpg", caption: "HOWO Mixer 26m³ - Cement Mixer Truck" },
+                     { img: "images/howo-mixer-12.jpg", caption: "HOWO Mixer 28m³ - Cement Mixer Truck" }
+                  ]
+               },
+               caterpillar: {
+                  "excavator": [
+                     { img: "images/cat-excavator-1.jpeg", caption: "320D - Excavator" },
+                     { img: "images/cat-excavator-2.jpeg", caption: "336D - Excavator" },
+                     { img: "images/cat-excavator-3.jpeg", caption: "349F - Excavator" },
+                     { img: "images/cat-excavator-4.jpeg", caption: "374F - Excavator" },
+                     { img: "images/cat-excavator-5.jpeg", caption: "390F - Excavator" },
+                     { img: "images/cat-excavator-6.jpeg", caption: "305.5E - Excavator" },
+                     { img: "images/cat-excavator-7.jpeg", caption: "308E - Excavator" },
+                     { img: "images/cat-excavator-8.jpeg", caption: "312D - Excavator" },
+                     { img: "images/cat-excavator-9.jpeg", caption: "315D - Excavator" },
+                     { img: "images/cat-excavator-10.jpeg", caption: "323D - Excavator" },
+                     { img: "images/cat-excavator-11.jpeg", caption: "329F - Excavator" },
+                     { img: "images/cat-excavator-12.jpeg", caption: "352F - Excavator" }
+                  ],
+                  "loader": [
+                     { img: "images/cat-loader-1.jpeg", caption: "906M - Loader" },
+                     { img: "images/cat-loader-2.jpeg", caption: "908M - Loader" },
+                     { img: "images/cat-loader-3.jpeg", caption: "910K - Loader" },
+                     { img: "images/cat-loader-4.jpeg", caption: "914K - Loader" },
+                     { img: "images/cat-loader-5.jpeg", caption: "918M - Loader" },
+                     { img: "images/cat-loader-6.jpeg", caption: "920K - Loader" },
+                     { img: "images/cat-loader-7.jpeg", caption: "924K - Loader" },
+                     { img: "images/cat-loader-8.jpeg", caption: "930M - Loader" },
+                     { img: "images/cat-loader-9.jpeg", caption: "938M - Loader" },
+                     { img: "images/cat-loader-10.jpeg", caption: "950M - Loader" }
+                  ],
+                  "dozer": [
+                     { img: "images/cat-dozer-1.jpeg", caption: "D6R - Dozer" },
+                     { img: "images/cat-dozer-2.jpeg", caption: "D8T - Dozer" },
+                     { img: "images/cat-dozer-3.jpeg", caption: "D9R - Dozer" },
+                     { img: "images/cat-dozer-4.jpeg", caption: "D10T - Dozer" },
+                     { img: "images/cat-dozer-5.jpeg", caption: "D11T - Dozer" },
+                     { img: "images/cat-dozer-6.jpeg", caption: "D5K - Dozer" },
+                     { img: "images/cat-dozer-7.jpeg", caption: "D6N - Dozer" },
+                     { img: "images/cat-dozer-8.jpeg", caption: "D7E - Dozer" },
+                     { img: "images/cat-dozer-9.jpeg", caption: "D8R - Dozer" },
+                     { img: "images/cat-dozer-10.jpeg", caption: "D9T - Dozer" },
+                     { img: "images/cat-dozer-11.jpeg", caption: "D4K - Dozer" },
+                     { img: "images/cat-dozer-12.jpeg", caption: "D3K - Dozer" }
+                  ],
+                  "wheel-loader": [
+                     { img: "images/cat-wheel-loader-1.jpeg", caption: "950H - Wheel Loader" },
+                     { img: "images/cat-wheel-loader-2.jpeg", caption: "980K - Wheel Loader" },
+                     { img: "images/cat-wheel-loader-3.jpeg", caption: "988K - Wheel Loader" },
+                     { img: "images/cat-wheel-loader-4.jpeg", caption: "992K - Wheel Loader" },
+                     { img: "images/cat-wheel-loader-5.jpeg", caption: "994K - Wheel Loader" },
+                     { img: "images/cat-wheel-loader-6.jpeg", caption: "924H - Wheel Loader" },
+                     { img: "images/cat-wheel-loader-7.jpeg", caption: "930H - Wheel Loader" },
+                     { img: "images/cat-wheel-loader-8.jpeg", caption: "938K - Wheel Loader" },
+                     { img: "images/cat-wheel-loader-9.jpeg", caption: "950M - Wheel Loader" },
+                     { img: "images/cat-wheel-loader-10.jpeg", caption: "962M - Wheel Loader" },
+                     { img: "images/cat-wheel-loader-11.jpeg", caption: "966K - Wheel Loader" },
+                     { img: "images/cat-wheel-loader-12.jpeg", caption: "972M - Wheel Loader" }
+                  ],
+                  "truck-loader": [
+                     { img: "images/cat-truck-loader-1.jpeg", caption: "770G - Truck Loader" },
+                     { img: "images/cat-truck-loader-2.jpeg", caption: "772G - Truck Loader" },
+                     { img: "images/cat-truck-loader-3.jpeg", caption: "773G - Truck Loader" }
+                  ]
+               },
+               xugong: {
+                  "bulldozer": [
+                     { img: "images/xugong-bulldozer-1.jpg", caption: "XD143 - Bulldozer" },
+                     { img: "images/xugong-bulldozer-2.jpg", caption: "XD160 - Bulldozer" },
+                     { img: "images/xugong-bulldozer-3.jpg", caption: "XD180 - Bulldozer" },
+                     { img: "images/xugong-bulldozer-4.jpg", caption: "XD200 - Bulldozer" },
+                     { img: "images/xugong-bulldozer-5.jpg", caption: "XD220 - Bulldozer" },
+                     { img: "images/xugong-bulldozer-6.jpg", caption: "XD240 - Bulldozer" },
+                     { img: "images/xugong-bulldozer-7.jpg", caption: "XD260 - Bulldozer" },
+                     { img: "images/xugong-bulldozer-8.jpg", caption: "XD280 - Bulldozer" },
+                     { img: "images/xugong-bulldozer-9.jpg", caption: "XD300 - Bulldozer" },
+                     { img: "images/xugong-bulldozer-10.jpg", caption: "XD320 - Bulldozer" }
+                  ],
+                  "road-roller": [
+                     { img: "images/xugong-road-roller-1.jpg", caption: "XS223J - Road Roller" },
+                     { img: "images/xugong-road-roller-2.jpg", caption: "XS263J - Road Roller" },
+                     { img: "images/xugong-road-roller-3.jpg", caption: "XS303 - Road Roller" },
+                     { img: "images/xugong-road-roller-4.jpg", caption: "XS143J - Road Roller" },
+                     { img: "images/xugong-road-roller-5.jpg", caption: "XS163J - Road Roller" },
+                     { img: "images/xugong-road-roller-6.jpg", caption: "XS183J - Road Roller" },
+                     { img: "images/xugong-road-roller-7.jpg", caption: "XS203J - Road Roller" },
+                     { img: "images/xugong-road-roller-8.jpg", caption: "XS123 - Road Roller" },
+                     { img: "images/xugong-road-roller-9.jpg", caption: "XS143 - Road Roller" },
+                     { img: "images/xugong-road-roller-10.jpg", caption: "XS163 - Road Roller" }
+                  ],
+                  "grader-machine": [
+                     { img: "images/xugong-grader-1.jpg", caption: "GR215 - Grader Machine" },
+                     { img: "images/xugong-grader-2.jpg", caption: "GR180 - Grader Machine" },
+                     { img: "images/xugong-grader-3.jpg", caption: "GR165 - Grader Machine" },
+                     { img: "images/xugong-grader-4.jpg", caption: "GR135 - Grader Machine" },
+                     { img: "images/xugong-grader-5.jpg", caption: "GR300 - Grader Machine" },
+                     { img: "images/xugong-grader-6.jpg", caption: "GR260 - Grader Machine" },
+                     { img: "images/xugong-grader-7.jpg", caption: "GR240 - Grader Machine" },
+                     { img: "images/xugong-grader-8.jpg", caption: "GR200 - Grader Machine" },
+                     { img: "images/xugong-grader-9.jpg", caption: "GR230 - Grader Machine" },
+                     { img: "images/xugong-grader-10.jpg", caption: "GR160 - Grader Machine" },
+                     { img: "images/xugong-grader-11.jpg", caption: "GR190 - Grader Machine" },
+                     { img: "images/xugong-grader-12.jpg", caption: "GR220 - Grader Machine" }
+                  ],
+                  "truck-lifting-machines": [
+                     { img: "images/xugong-truck-lift-1.jpg", caption: "QY25K - Truck Lifting Machine" },
+                     { img: "images/xugong-truck-lift-2.jpg", caption: "QY50KA - Truck Lifting Machine" },
+                     { img: "images/xugong-truck-lift-3.jpg", caption: "QY70K - Truck Lifting Machine" }
+                  ]
+               }
+            };
+
+            // Function to display products
+            function displayProducts(group, subgroup) {
+               const $display = $('#model-display');
+               $display.empty();
+               const items = models[group][subgroup];
+               if (items && items.length > 0) {
+                  items.forEach(item => {
+                     const imgFileName = item.img.split('/').pop();
+                     $display.append(`
+                        <div class="col-md-4 col-sm-6">
+                           <div class="product_box">
+                              <figure><a href="request-quote.html?img=${imgFileName}&model=${encodeURIComponent(item.caption)}"><img src="${item.img}" alt="${item.caption}"></a></figure>
+                              <h3>${item.caption}</h3>
+                           </div>
+                        </div>
+                     `);
+                  });
+               } else {
+                  $display.append('<p>No products available in this category yet.</p>');
+               }
+            }
+
+            // Handle sidebar clicks
+            $('.subgroups a').click(function(e) {
+               e.preventDefault();
+               $('.subgroups a').removeClass('active');
+               $(this).addClass('active');
+               const group = $(this).data('group');
+               const subgroup = $(this).data('subgroup');
+               displayProducts(group, subgroup);
+               if ($(window).width() < 768) {
+                  $('#sidebarCollapse').collapse('hide');
+               }
+            });
+
+            // Initial display
+            displayProducts('howo', 'dump-trucks');
+
+            // Handle URL parameters on page load
+            const urlParams = new URLSearchParams(window.location.search);
+            const group = urlParams.get('group');
+            const subgroup = urlParams.get('subgroup');
+            if (group && subgroup && models[group] && models[group][subgroup]) {
+               $('.subgroups a').removeClass('active');
+               $(`.subgroups a[data-group="${group}"][data-subgroup="${subgroup}"]`).addClass('active');
+               displayProducts(group, subgroup);
+               $('html, body').animate({ scrollTop: $('#model-display').offset().top - 100 }, 500);
+            }
+
+            // Sidebar toggler behavior
+            const $sidebar = $('#sidebarCollapse');
+            const $toggler = $('#sidebar-toggler');
+            const $navbarToggler = $('.navbar-toggler');
+            const headerHeight = $('header').outerHeight(); // Header height for minimum boundary
+            const titleTop = $('.titlepage').offset().top; // "Our Products" title position
+            const initialTop = 120; // Initial position in pixels
+            let lastScrollTop = 0;
+
+            // Set initial position
+            $toggler.css('top', initialTop);
+
+            // Existing toggle behavior
+            $toggler.on('click', function() {
+               if ($sidebar.hasClass('show')) {
+                  $toggler.show();
+               } else {
+                  $toggler.hide();
+               }
+            });
+            $sidebar.on('shown.bs.collapse', function() {
+               $toggler.hide();
+            });
+            $sidebar.on('hidden.bs.collapse', function() {
+               $toggler.show();
+            });
+
+            // Hide sidebar toggler when navbar toggler is clicked
+            $navbarToggler.on('click', function() {
+               if ($navbarToggler.attr('aria-expanded') === 'false') {
+                  $toggler.hide();
+               } else {
+                  $toggler.show();
+               }
+            });
+
+            // Scroll behavior with dynamic footer boundary
+            $(window).scroll(function() {
+               let scrollTop = $(this).scrollTop();
+               let currentTop = parseInt($toggler.css('top')); // Current position of toggler
+               const footerTop = $('#contact').offset().top - $(window).scrollTop(); // Dynamic footer position relative to viewport
+               const togglerHeight = $toggler.outerHeight(); // Height of the toggler
+               const footerBoundary = footerTop - togglerHeight - 10; // Stop 10px above footer in viewport coordinates
+
+               if (scrollTop > lastScrollTop) {
+                  // Scrolling down
+                  let newTop = currentTop - (scrollTop - lastScrollTop);
+                  newTop = Math.max(headerHeight, Math.min(newTop, initialTop)); // Stay between header and initialTop
+                  if (newTop > footerBoundary) {
+                     newTop = footerBoundary; // Clamp to footer boundary if exceeded
+                  }
+                  $toggler.css('top', newTop);
+               } else {
+                  // Scrolling up
+                  let newTop = currentTop + (lastScrollTop - scrollTop);
+                  newTop = Math.min(titleTop, Math.max(headerHeight, newTop)); // Stay between header and titleTop
+                  if (newTop > footerBoundary) {
+                     newTop = footerBoundary; // Clamp to footer boundary if exceeded
+                  }
+                  $toggler.css('top', newTop);
+               }
+
+               lastScrollTop = scrollTop;
+            });
+
+            // Close sidebar on outside click
+            $(document).click(function(event) {
+               if ($(window).width() < 768 && $sidebar.hasClass('show')) {
+                  if (!$sidebar.is(event.target) && !$sidebar.has(event.target).length && !$toggler.is(event.target) && !$toggler.has(event.target).length) {
+                     $sidebar.collapse('hide');
+                  }
+               }
+            });
+         });
+      </script>
+      <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'92af9ee19f87c004',t:'MTc0Mzc1NzI4MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+      <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'92c814692a07bfc0',t:'MTc0NDAxMzc1My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+   </body>
+</html>
